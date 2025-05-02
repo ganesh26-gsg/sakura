@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pagePadding {
+  @apply p-4;
+}
+
+.button-1 {
+  @apply bg-gradient-to-r from-blue-600 to-pink-600 hover:from-pink-600 hover:to-blue-600;
+}
+.button-2 {
+  @apply bg-gradient-to-r from-yellow-600 to-pink-600 hover:from-pink-600 hover:to-blue-600;
+}
+.button-3 {
+  @apply bg-gradient-to-r from-pink-600 to-orange-500 hover:from-pink-600 hover:to-blue-600;
+}
