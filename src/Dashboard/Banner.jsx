@@ -13,7 +13,7 @@ const Banner = () => {
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-black/10 text-center px-4">
           <Link to="/tops">
-            <button className="mt-4 px-6 py-3 bg-white text-black hover:bg-pink-500 hover:scale-110 transition-transform duration-300 rounded-md">
+            <button className="mt-4 px-6 sm:py-2 lg:py-2 bg-white text-black hover:bg-pink-500 hover:scale-110 transition-transform duration-300 rounded-2xl">
               Shop Now
             </button>
           </Link>

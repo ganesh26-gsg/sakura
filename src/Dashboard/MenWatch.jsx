@@ -6,8 +6,7 @@ const Menwatch = () => {
   const [menwatch, setMenwatch] = useState([]);
 
   useEffect(() => {
-    axios
-      .get('https://dummyjson.com/products/category/mens-watches?limit=4')
+    axios.get('https://dummyjson.com/products/category/mens-watches?limit=4')
       .then((res) => {
         setMenwatch(res.data.products);
       })

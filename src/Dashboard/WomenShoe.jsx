@@ -6,8 +6,7 @@ const WomenShoe = () => {
   const [shoe, setShoe] = useState([]);
 
   useEffect(() => {
-    axios
-      .get('https://dummyjson.com/products/category/womens-shoes?limit=4')
+    axios.get('https://dummyjson.com/products/category/womens-shoes?limit=4')
       .then((res) => {
         setShoe(res.data.products);
       })

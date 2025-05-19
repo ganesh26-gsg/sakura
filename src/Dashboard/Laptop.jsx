@@ -7,8 +7,7 @@ const Laptops = () => {
   const [laptops, setLaptops] = useState([]);
 
   useEffect(() => {
-    axios
-      .get('https://dummyjson.com/products/category/laptops')
+    axios.get('https://dummyjson.com/products/category/laptops')
       .then((res) => {
         setLaptops(res.data.products.slice(0, 4));
       })

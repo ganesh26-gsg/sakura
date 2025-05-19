@@ -54,7 +54,7 @@ const CartDialog = () => {
                   />
                   <div className="flex flex-col justify-between">
                     <p className="text-sm font-medium text-gray-800 line-clamp-1">{item.title}</p>
-                    <p className="text-sm text-gray-500">₹{(item.price * exchangeRate).toFixed(2)}</p>
+                    <p className="text-sm text-gray-500">₹{(item.price * exchangeRate).toFixed(0)}</p>
                     <p className="text-sm text-gray-500">Qty: {item.quantity}</p>
                   </div>
                 </div>
@@ -72,7 +72,7 @@ const CartDialog = () => {
 
         {cart.length > 0 && (
           <div className="mt-6 text-right text-lg font-semibold border-t pt-4">
-            Total: <span className="text-green-600 font-bold">₹{totalPriceInINR.toFixed(2)}</span>
+            Total: <span className="text-green-600 font-bold">₹{totalPriceInINR.toFixed(0)}</span>
           </div>
         )}
 

@@ -12,8 +12,7 @@ const LaptopPage = () => {
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
   useEffect(() => {
-    axios
-      .get('https://dummyjson.com/products/category/laptops')
+    axios.get('https://dummyjson.com/products/category/laptops')
       .then((response) => {
         setLaptops(response.data.products);
         setFilteredLaptops(response.data.products);
@@ -119,8 +118,8 @@ const LaptopPage = () => {
                 <button
                   className="absolute  left-1/2 transform -translate-x-1/2
                   opacity-0 group-hover:opacity-100 transition-all duration-300
-                  button-3 text-white font-semibold text-sm px-4 py-2 rounded-md
-                  shadow "
+                  button-3 text-white font-semibold text-sm px-4 py-2 rounded-2xl
+                  shadow z-10 "
                 >
                   Shop Now
                 </button>

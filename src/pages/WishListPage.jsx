@@ -75,7 +75,7 @@ const WishlistDialog = () => {
                   <h3 className="text-lg font-semibold text-gray-900 line-clamp-1">
                     {item.title}
                   </h3>
-                  <p className="text-gray-700 font-medium mt-1">₹{item.price * 82}</p>
+                  <p className="text-gray-700 font-medium mt-1">₹{(item.price * 82).toFixed(0)}</p>
 
                   <Dialog.Close asChild>
                     <Link

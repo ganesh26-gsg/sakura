@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Header from '../Dashboard/Header';
 import { FaFilter, FaChevronLeft, FaChevronRight, FaChevronDown, FaChevronUp } from 'react-icons/fa';
-import SubHeader from '../Dashboard/SubHeader';
 import { Link } from 'react-router-dom';
 
 const MobilePage = () => {
@@ -14,8 +13,7 @@ const MobilePage = () => {
   const exchangeRate = 82;
 
   useEffect(() => {
-    axios
-      .get('https://dummyjson.com/products/category/smartphones')
+    axios.get('https://dummyjson.com/products/category/smartphones')
       .then((response) => {
         setMobiles(response.data.products); 
         setFilteredMobiles(response.data.products); 
@@ -100,12 +98,12 @@ const MobilePage = () => {
             <FaFilter className="text-xl" />
           </div>
         )}
-
-        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
+               
+        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
           {filteredMobiles.length === 0 ? (
             <div>Loading...</div>
           ) : (
-            filteredMobiles.map((mobile) => (
+            filteredMobiles.map((mobile) => (     
               <div key={mobile.id} className="border rounded-lg p-3 shadow-sm group relative overflow-hidden">
                 <Link to={`/mobiles/${mobile.id}`} className="block relative">
                   <img
@@ -116,7 +114,7 @@ const MobilePage = () => {
                   <button
                     className="absolute top-96 left-1/2 transform -translate-x-1/2
                     opacity-0 group-hover:opacity-100 transition-all duration-300
-                    button-3 text-white font-semibold text-sm px-2 py-2 rounded-md
+                    button-3 text-white font-semibold text-sm px-2 py-2 rounded-2xl
                     shadow hover:bg-gray-800 z-10"
                   >
                     Shop Now

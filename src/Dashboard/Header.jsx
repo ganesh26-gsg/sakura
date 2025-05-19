@@ -25,7 +25,7 @@ const Header = () => {
             className="block md:hidden text-gray-700 cursor-pointer text-lg"
             onClick={() => setShowMobileSearch(!showMobileSearch)}
           />
-          <Link to="/profile" className="text-gray-700 hover:text-indigo-600">
+          <Link to="/profile" className="text-gray-700 hover:text-pink-600">
             <FaUser size={20} />
           </Link>
           <WishlistDialog />

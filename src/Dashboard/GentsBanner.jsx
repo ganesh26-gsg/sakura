@@ -8,7 +8,7 @@ const GentsBanner = () => {
       <img 
         src={gentsBanner} 
         alt="Gents Banner" 
-        className="w-full rounded-lg" 
+        className="w-full rounded-3xl" 
       />
       <div className="absolute inset-0 flex flex-col items-center ml-[850px] mt-24 text-white text-center px-4">
         <Link to='/men' >

@@ -13,8 +13,7 @@ const GroceriesPage = () => {
   const exchangeRate = 82;
 
   useEffect(() => {
-    axios
-      .get('https://dummyjson.com/products/category/groceries')
+    axios.get('https://dummyjson.com/products/category/groceries')
       .then((res) => {
         setProducts(res.data.products);
         setFiltered(res.data.products);
@@ -112,12 +111,12 @@ const GroceriesPage = () => {
                 <img
                   src={item.images[0]}
                   alt={item.title}
-                  className="w-full h-56 object-cover rounded transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-60 object-cover rounded transition-transform duration-300 group-hover:scale-105"
                 />
                 <button
                   className="absolute left-1/2 transform -translate-x-1/2
                   opacity-0 group-hover:opacity-100 transition-all duration-300
-                  bg-green-600 text-white font-semibold text-sm px-4 py-2 rounded-md
+                  bg-green-600 text-white font-semibold text-sm px-4 py-2 rounded-2xl
                   shadow hover:bg-gray-800 z-10"
                 >
                   Shop Now

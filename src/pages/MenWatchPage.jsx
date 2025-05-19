@@ -13,8 +13,7 @@ const MensWatchPage = () => {
   const exchangeRate = 82;
 
   useEffect(() => {
-    axios
-      .get('https://dummyjson.com/products/category/mens-watches')
+    axios.get('https://dummyjson.com/products/category/mens-watches')
       .then((response) => {
         setWatches(response.data.products);
         setFilteredWatches(response.data.products);
@@ -102,7 +101,7 @@ const MensWatchPage = () => {
                   <button
                     className="absolute left-1/2 transform -translate-x-1/2
                     opacity-0 group-hover:opacity-100 transition-all duration-300
-                    button-3 text-white font-semibold text-sm px-4 py-2 rounded-md
+                    button-3 text-white font-semibold text-sm px-4 py-2 rounded-2xl
                     shadow z-10"
                   >
                     ShopNow

@@ -6,8 +6,7 @@ const Mens = () => {
   const [menShirt, setMenShirt] = useState([]);
 
   useEffect(() => {
-    axios
-      .get('https://dummyjson.com/products/category/mens-shirts?limit=4')
+    axios.get('https://dummyjson.com/products/category/mens-shirts?limit=4')
       .then((res) => {
         setMenShirt(res.data.products);
       })
