@@ -25,7 +25,7 @@ const HoverCategory = ({ label, items }) => {
 
       <HoverCard.Portal>
         <HoverCard.Content
-          className="z-50 bg-white rounded shadow-xl p-2 text-sm min-w-[140px]"
+          className="z-50 bg-white rounded-e-3xl shadow-xl p-2 text-sm min-w-[140px]"
           sideOffset={6}
         >
           {items.map((item, i) => (
@@ -58,11 +58,13 @@ const HoverCategory = ({ label, items }) => {
                 item === 'smart ac' ? '/laptop' :
                 `/${label}/${item}`
               }
-              className="px-3 py-2.5 hover:bg-gray-600 rounded hover:text-white cursor-pointer block"
+              className="px-3 py-2.5 hover:bg-gray-500 rounded-e-2xl hover:text-white cursor-pointer block"
             >
               {item}
             </Link>
           ))}
+          <HoverCard.Arrow className="fill-pink-600" />
+
         </HoverCard.Content>
       </HoverCard.Portal>
     </HoverCard.Root>
